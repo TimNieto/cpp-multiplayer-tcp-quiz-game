@@ -23,5 +23,6 @@ A C++ client-server quiz game that allows up to 3 players to compete in real-tim
 g++ server.cpp -o server -pthread
 ./server
 
+### Client
 g++ client.cpp -o client
 ./client
