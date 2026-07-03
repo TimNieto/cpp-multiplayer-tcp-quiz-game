@@ -1,11 +1,27 @@
-# Compiled object files and binaries
-*.o
+# Build outputs
+*.exe
 *.out
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
 
-# Backup or temporary files
+# Build folders
+build/
+out/
+bin/
+debug/
+release/
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
 *.log
 *.tmp
-*~
-
-# Editor files
-*.swp
