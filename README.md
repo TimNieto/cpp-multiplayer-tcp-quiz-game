@@ -88,29 +88,29 @@ cd multiplayer-tcp-quiz-game-cpp
 
 ## Sample Output
 
-### Player Connection Setup
+### Server Waiting for Players
 
-![Player Connection Setup](assets/sample-output.png)
+![Server Waiting for Players](assets/sample-output.png)
 
-### Round 1 Question and Scoreboard
+### Players Joined and Round 1 Started
 
-![Round 1 Question and Scoreboard](assets/sample-output2.png)
+![Players Joined and Round 1 Started](assets/sample-output2.png)
 
-### Quiz Rounds and Score Updates
+### Round 1 Scoreboard and Round 2 Question
 
-![Quiz Rounds and Score Updates](assets/sample-output3.png)
+![Round 1 Scoreboard and Round 2 Question](assets/sample-output3.png)
 
-### Final Tie Result and Tiebreaker Prompt
+### Round 2 Scoreboard and Round 3 Question
 
-![Final Tie Result and Tiebreaker Prompt](assets/sample-output4.png)
+![Round 2 Scoreboard and Round 3 Question](assets/sample-output4.png)
 
-### Tiebreaker Question
+### Final Tie Result and Tiebreaker Start
 
-![Tiebreaker Question](assets/sample-output5.png)
+![Final Tie Result and Tiebreaker Start](assets/sample-output5.png)
 
-### Tiebreaker Winner
+### Tiebreaker Scoreboard and Winner
 
-![Tiebreaker Winner](assets/sample-output6.png)
+![Tiebreaker Scoreboard and Winner](assets/sample-output6.png)
 
 ## Networking Notes
 
