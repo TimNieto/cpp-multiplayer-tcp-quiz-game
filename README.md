@@ -1,30 +1,159 @@
-# Multiplayer TCP Quiz Game in C++  
+# Multiplayer TCP Quiz Game in C++
 
-A C++ client-server quiz game that allows up to 3 players to compete in real-time. Features include multiple-choice questions, scoring, tiebreaker rounds, and a live scoreboard.  
+A C++ client-server quiz game that allows multiple players to connect through TCP sockets and compete in a real-time console-based quiz.
+
+This project demonstrates socket programming, multithreading, mutex-protected shared state, scoring logic, and tiebreaker handling using a server-client architecture.
 
 ## Features
+
 - TCP socket-based client-server communication
-- Multithreading for concurrent player handling
-- Mutex-protected shared state for thread safety
-- Real-time scoreboard and scoring system
-- Tiebreaker rounds for tied scores
-- Simple console-based client interface  
+- Supports 3 connected players
+- Multithreaded player connection handling
+- Mutex-protected shared player list
+- Multiple-choice quiz questions
+- Real-time score updates
+- Final results display
+- Tiebreaker round for tied players
+- Console-based server and client programs
 
-## Technologies & Concepts
+## Technologies Used
+
+- C++
 - C++17
-- TCP/IP sockets (`<sys/socket.h>`, `<arpa/inet.h>`, `<netinet/in.h>`)
-- Multithreading with `<thread>` and `<mutex>`
-- Standard data structures (`vector`, `map`) for question and player management  
+- POSIX sockets
+- TCP/IP networking
+- Threads
+- Mutex
+- Ubuntu/Linux terminal
+- Oracle VirtualBox
+- Git and GitHub
 
-## Usage
+## Project Structure
 
-### Server
-Compile the server:
+```text
+multiplayer-tcp-quiz-game-cpp/
+├── .gitignore
+├── README.md
+├── assets/
+│   ├── sample-output.png
+│   ├── sample-output2.png
+│   ├── sample-output3.png
+│   ├── sample-output4.png
+│   ├── sample-output5.png
+│   └── sample-output6.png
+├── client.cpp
+└── server.cpp
+```
+
+## How to Run
+
+> Note: This project uses POSIX socket headers such as `<sys/socket.h>`, `<netinet/in.h>`, `<arpa/inet.h>`, and `<unistd.h>`.  
+> Run this project on Linux, macOS, WSL, or an Ubuntu virtual machine.
+
+### Ubuntu/Linux
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/TimNieto/multiplayer-tcp-quiz-game-cpp.git
+```
+
+2. Go to the project folder:
+
+```bash
+cd multiplayer-tcp-quiz-game-cpp
+```
+
+3. Compile the server and client:
+
 ```bash
 g++ server.cpp -o server -pthread
-
-./server
-
 g++ client.cpp -o client
+```
 
+4. Run the server in one terminal:
+
+```bash
+./server
+```
+
+5. Open three more terminals and run one client in each terminal:
+
+```bash
+cd multiplayer-tcp-quiz-game-cpp
 ./client
+```
+
+6. Enter a player name in each client window and answer the quiz questions.
+
+## Sample Output
+
+### Player Connection Setup
+
+![Player Connection Setup](assets/sample-output.png)
+
+### Round 1 Question and Scoreboard
+
+![Round 1 Question and Scoreboard](assets/sample-output2.png)
+
+### Quiz Rounds and Score Updates
+
+![Quiz Rounds and Score Updates](assets/sample-output3.png)
+
+### Final Tie Result and Tiebreaker Prompt
+
+![Final Tie Result and Tiebreaker Prompt](assets/sample-output4.png)
+
+### Tiebreaker Question
+
+![Tiebreaker Question](assets/sample-output5.png)
+
+### Tiebreaker Winner
+
+![Tiebreaker Winner](assets/sample-output6.png)
+
+## Networking Notes
+
+The server listens on port `12345`.
+
+The client connects to:
+
+```text
+127.0.0.1
+```
+
+For the easiest test, run the server and all client terminals on the same machine or inside the same Ubuntu virtual machine.
+
+## Concepts Used
+
+- TCP socket programming
+- Server-client architecture
+- Multithreading
+- Mutex synchronization
+- Shared state management
+- Structs
+- Vectors
+- Maps
+- Input validation
+- Score calculation
+- Tiebreaker logic
+
+## Future Improvements
+
+- Allow a custom number of players
+- Add configurable server IP and port
+- Add more quiz categories
+- Randomize question order
+- Add timer-based answering
+- Improve client disconnect handling
+- Add a GUI or web-based client
+
+## License
+
+This project is for educational and portfolio purposes only. All rights are reserved.
+
+You may view the source code, but you may not copy, modify, distribute, or use this code without permission from the author.
+
+## Author
+
+Created by Tim Nieto.
