@@ -31,7 +31,7 @@ This project demonstrates socket programming, multithreading, mutex-protected sh
 ## Project Structure
 
 ```text
-multiplayer-tcp-quiz-game-cpp/
+cpp-multiplayer-tcp-quiz-game/
 ├── .gitignore
 ├── README.md
 ├── assets/
@@ -55,13 +55,13 @@ multiplayer-tcp-quiz-game-cpp/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/TimNieto/multiplayer-tcp-quiz-game-cpp.git
+git clone https://github.com/TimNieto/cpp-multiplayer-tcp-quiz-game.git
 ```
 
 2. Go to the project folder:
 
 ```bash
-cd multiplayer-tcp-quiz-game-cpp
+cd cpp-multiplayer-tcp-quiz-game
 ```
 
 3. Compile the server and client:
@@ -80,7 +80,7 @@ g++ client.cpp -o client
 5. Open three more terminals and run one client in each terminal:
 
 ```bash
-cd multiplayer-tcp-quiz-game-cpp
+cd cpp-multiplayer-tcp-quiz-game
 ./client
 ```
 
